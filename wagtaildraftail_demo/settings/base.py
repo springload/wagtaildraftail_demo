@@ -133,6 +133,15 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
+# Accept all hostnames, since we don't know in advance which hostname will be used for any given Heroku instance.
+# IMPORTANT: Set this to a real hostname when using this in production!
+# See https://docs.djangoproject.com/en/1.10/ref/settings/#allowed-hosts
+ALLOWED_HOSTS = [
+    'wagtaildraftail.herokuapp.com',
+    'localhost:8000',
+]
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # Wagtail settings
 
