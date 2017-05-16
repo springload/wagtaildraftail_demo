@@ -1,0 +1,4 @@
+wagtail==1.9
+# -e git://github.com/springload/wagtail.git@v1.11.0a-dist/master#egg=wagtail
+wagtaildraftail==0.6.3
+whitenoise==3.3.0

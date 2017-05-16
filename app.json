@@ -1,0 +1,19 @@
+{
+  "name": "wagtaildraftail_demo",
+  "description": "",
+  "repository": "https://github.com/springload/wagtaildraftail_demo",
+  "logo": "",
+  "keywords": [
+    "wagtail",
+    "django"
+  ],
+  "env": {
+    "DJANGO_SETTINGS_MODULE": "wagtaildraftail_demo.settings.heroku"
+  },
+  "scripts": {
+    "postdeploy": "django-admin.py migrate && django-admin.py load_initial_data"
+  },
+  "addons": [
+    "heroku-postgresql:hobby-dev"
+  ]
+}
